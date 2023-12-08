@@ -5,8 +5,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-supabase-auth.vercel.app",
-  output: "hybrid",
-  adapter: cloudflare(),
+  output: "server",
+  adapter: cloudflare({}),
   integrations: [tailwind(), solidJs()],
 });

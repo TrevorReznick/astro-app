@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "npx wrangler pages dev ./dist",
     "format": "prettier --w 'src/**/*'",
     "astro": "astro"
   },

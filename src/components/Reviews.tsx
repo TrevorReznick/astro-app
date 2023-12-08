@@ -31,8 +31,6 @@ const fetcher: ResourceFetcher<true, GuestbookEntry[], GuestbookEntry> = async (
 };
 
 export function Reviews({ reviews }: { reviews: GuestbookEntry[] }) {
-  console.log("REVIEWS");
-
   const [data, { refetch }] = createResource(fetcher, {
     initialValue: reviews,
     ssrLoadFrom: "initial",
