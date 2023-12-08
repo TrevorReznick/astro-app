@@ -41,8 +41,9 @@ export const onRequest = defineMiddleware(
         secure: true,
       });
     }
+    console.log(redirectRoutes.includes(url.pathname), url.pathname);
 
-    if (redirectRoutes.includes(url.pathname)) {
+    if (redirectRoutes.includes(url.pathname) || redirectRoutes.includes(url.pathname.replace(/\/$/, ""))) {
       const accessToken = cookies.get("sb-access-token");
       const refreshToken = cookies.get("sb-refresh-token");
 
