@@ -5,7 +5,7 @@ export const GET: APIRoute = async () => {
   const { data, error } = await supabase
     .from("guestbook")
     .select("*")
-    .order("created_at", { ascending: true });
+    .order("created_at", { ascending: true })
 
   if (error) {
     return new Response(
@@ -16,7 +16,7 @@ export const GET: APIRoute = async () => {
     );
   }
 
-  return new Response(JSON.stringify(data));
+  return new Response(JSON.stringify(data))
 };
 
 export const POST: APIRoute = async ({ request }) => {
@@ -35,5 +35,5 @@ export const POST: APIRoute = async ({ request }) => {
     );
   }
 
-  return new Response(JSON.stringify(data));
-};
+  return new Response(JSON.stringify(data))
+}
