@@ -15,11 +15,13 @@
     "@astrojs/solid-js": "^3.0.2",
     "@astrojs/tailwind": "^5.0.2",
     "@astrojs/vue": "^4.3.0",
-    "@supabase/supabase-js": "^2.38.4",
+    "@supabase/supabase-js": "^2.43.4",
+    "@types/node": "^20.13.0",
     "astro": "^4.0.3",
     "axios": "^1.7.2",
     "solid-js": "^1.8.5",
     "tailwindcss": "^3.3.5",
+    "vite": "^5.2.12",
     "vue": "^3.4.27"
   },
   "devDependencies": {
