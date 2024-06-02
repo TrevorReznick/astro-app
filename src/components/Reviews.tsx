@@ -15,7 +15,7 @@ const fetcher: ResourceFetcher<true, GuestbookEntry[], GuestbookEntry> = async (
   _,
   { refetching, value },
 ) => {
-  const res = await fetch("/api/guestbook", {
+  const res = await fetch("/api/v1/guestbook", {
     method: refetching ? "POST" : "GET",
     body: refetching ? JSON.stringify(refetching) : null,
   });
